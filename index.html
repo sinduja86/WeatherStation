@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="weatherApp">
+    <head>
+        <title>Weather Forecast SPA</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+        <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+        <script src="weather.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Weather Application</a>
+				</div>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+            
+           <div class="row">
+	           <div class="col-md-6 col-lg-6 well">
+                  <form>
+                     <div class="form-group">
+                       <label for="username">Enter City,State</label>
+                       <input type="text" 
+                         class="form-control" 
+                         id="city"
+                         placeholder="City,State">
+                     </div>
+                      <button class="btn btn-primary" type="button" id="sbmtBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+               
+            <div class="panel panel-default" id="alertPanel" style="display:none">
+                <div class="panel-heading">Alert Info</div>
+                <div class="panel-body" id="alertPanelBody"></div>
+            </div>
+            
+            <div id="currentTempDiv"></div>
+            <div id="daysDiv"></div>
+
+
+
+		
+
+    </body>
+</html>
